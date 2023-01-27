@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Libre+Baskerville:wght@700&family=Montserrat:wght@300&family=Open+Sans:wght@400;600&family=Paytone+One&family=Raleway:wght@300&display=swap");
+nav {
+  background-color: white;
+  display: flex;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
+  margin-bottom: 2.5em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+nav ul {
+  padding: 0em 8em 0em 8em;
+}
+nav ul #Logo {
+  margin: 1em;
+  width: 120px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  vertical-align: middle;
+  justify-content: flex-start;
+  margin-left: 3em;
+  text-decoration: none;
+  color: #c3c3c3;
+}
+nav ul li a:hover {
+  color: rgba(74, 75, 76, 0.7);
+}
+nav ul li a:is(:link, :active, :visited).active {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+nav a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+nav a:active {
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-top: 2.5em;
+}
+
+h5 {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.back {
+  font-family: "Montserrat", sans-serif;
+  font-style: 30px;
+  font-weight: bold;
+}
+
+label {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.description {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.price {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sizing {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a:is(:link, :active, :visited).active {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+nav {
+  margin-right: -1em;
+}
+nav ul #Logo {
+  margin: -0.2em 0.2em -0.2em 0.2em;
+}
+
+main {
+  margin: 0em 12em 0em 12em;
+}
+main .big-block {
+  margin-top: 7em;
+}
+main h5 {
+  margin: 1em 0em 1em 0em;
+}
+main .overview {
+  margin: 1.5em;
+}
+
+.block {
+  background-color: white;
+  box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
+  width: 550px;
+  height: 630px;
+}
+.block #House-detail {
+  width: 550px;
+}
+.block .back {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+#heading-5 {
+  margin: 0.4em 0em -0.5em 0em;
+}
+
+aside {
+  float: right;
+  position: top-right;
+  height: 50%;
+  width: 35%;
+}
+aside .small-block {
+  background-color: white;
+  box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
+  width: 350px;
+  height: 120px;
+  border-radius: 5px;
+  padding: 0.8em;
+  margin-bottom: 1em;
+}
+aside .heading-5 {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+aside .sizing-aside {
+  display: flex;
+  align-items: center;
+}
+
+.icon-array {
+  width: 23px;
+  margin-right: 1em;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+.location .icon-location {
+  width: 15px;
+  margin-right: 0.5em;
+}
+
+.icons {
+  display: flex;
+  margin-top: -0.8em;
+}
+.icons .price {
+  display: flex;
+  align-items: center;
+}
+.icons .price .icon-price {
+  width: 15px;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+.icons .sizing {
+  display: flex;
+  align-items: center;
+}
+.icons .sizing .icon-size {
+  width: 15px;
+  margin: 0em 0.5em 0em 1em;
+}
+.icons .build {
+  display: flex;
+  align-items: center;
+}
+.icons .build .icon-const {
+  width: 15px;
+  margin: 0em 0.5em 0em 1em;
+}
+
+.rooms {
+  display: flex;
+  align-items: center;
+}
+.rooms .bed {
+  display: flex;
+  align-items: center;
+}
+.rooms .bed .icon-bed {
+  width: 15px;
+  margin-right: 0.5em;
+}
+.rooms .shower {
+  display: flex;
+  align-items: center;
+}
+.rooms .shower .icon-shower {
+  width: 15px;
+  margin: 0em 0.5em 0em 1em;
+}
+.rooms .garage {
+  display: flex;
+  align-items: center;
+}
+.rooms .garage .icon-garage {
+  width: 15px;
+  margin: 0em 0.5em 0em 1em;
+}
+
+#House {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 1% 20%;
+     object-position: 1% 20%;
+  border-radius: 10px;
+  float: left;
+  margin-right: 1em;
+}
+
+#list-icon {
+  width: 15px;
+}
+
+.information {
+  display: table-cell;
+}/*# sourceMappingURL=details.css.map */

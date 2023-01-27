@@ -1,0 +1,180 @@
+@import "nav";
+@import "fonts";
+@import "align";
+
+nav {
+    margin-right: -1em;
+
+    ul {
+        #Logo {
+                margin: -0.2em 0.2em -0.2em 0.2em;
+            }
+    }
+}
+
+main {
+
+    .big-block {
+        margin-top: 7em;
+    }
+
+    margin: 0em 12em 0em 12em;
+
+    h5 {
+            margin: 1em 0em 1em 0em;
+        }
+
+    .overview {
+            margin: 1.5em;
+                }
+            }
+
+    .block {
+            background-color: white;
+            box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
+            width: 550px;
+            height: 630px;
+    
+    #House-detail {
+                width: 550px;
+            }
+
+    .back {
+                @include align;
+                margin-bottom: 1.5em;
+            }
+        }
+        
+
+//aside//
+
+#heading-5 {
+        margin: 0.4em 0em -0.5em 0em;
+    }
+
+aside {
+    float: right;
+    position: top-right;
+    height: 50%;
+    width: 35%;
+
+    .small-block {
+        background-color: white;
+        box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
+        width: 350px;
+        height: 120px;
+        border-radius: 5px;
+        padding: 0.8em;
+        margin-bottom: 1em;
+    }
+
+    .heading-5 {
+        font-family: 'Monstserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+    }
+
+    .sizing-aside {
+        @include align;
+        }
+
+}
+
+.icon-array {
+    width: 23px;
+    margin-right: 1em;
+}
+
+
+.location {
+    @include align;
+    
+    .icon-location {
+        width: 15px;
+        margin-right: 0.5em;
+    }
+}
+
+.icons {
+    display: flex;
+    margin-top: -0.8em;
+
+.price {
+    @include align;
+
+    .icon-price {
+        width: 15px;
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+    }
+}
+
+.sizing {
+    @include align;
+
+    .icon-size {
+        width: 15px;
+        margin: 0em 0.5em 0em 1em;
+    }
+}
+
+.build {
+    @include align;
+
+    .icon-const {
+        width: 15px;
+        margin: 0em 0.5em 0em 1em;
+    }
+
+}
+}
+
+.rooms {
+    @include align;
+
+    .bed {
+        @include align;
+
+        .icon-bed {
+            width: 15px;
+            margin-right: 0.5em;
+        }
+    }
+
+    .shower {
+        @include align;
+
+        .icon-shower {
+            width: 15px;
+            margin: 0em 0.5em 0em 1em;
+        }
+    }
+
+    .garage {
+        @include align;
+
+        .icon-garage {
+            width: 15px;
+            margin: 0em 0.5em 0em 1em;
+        }
+    }
+}
+
+#House {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: 1% 20%;
+    border-radius: 10px;
+    float: left;
+    margin-right: 1em;
+}
+
+#list-icon {
+    width: 15px;
+}
+
+.information {
+    display: table-cell;
+}

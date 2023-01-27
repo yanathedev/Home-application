@@ -1,0 +1,99 @@
+@import "variables";
+@import "style";
+@import "fonts";
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+        background: url(/images/img_background@3x.png) no-repeat center fixed;
+        -webkit-background-size: contain;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: 20% 10%;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
+    margin-bottom: 2.5em;
+
+    ul {
+        padding: 0em 8em 0em 8em;
+
+
+    #Logo {
+            margin: 1em;
+            width: 120px;
+        }
+
+    li {
+            display: inline-block;
+
+    a {
+            vertical-align: middle;
+            justify-content: flex-start;
+            margin-left: 3em;
+            text-decoration: none;
+            color: #c3c3c3;
+            }
+        }
+    }
+}
+
+.container {
+    padding: 16px;
+}
+
+.icon-array {
+    width: 23px;
+    margin-right: 1em;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.small-h2 {
+    margin-bottom: 1em;
+}
+
+input {
+    border: none;
+    padding: 0.8em;
+    border-radius: 6px;
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+label {
+    color: rgba($text-1, 0.8);
+}
+
+#description {
+    padding: 1em 11em 6em 1em;
+}
+
+#form {
+    margin-top: 6em;
+}
+
+.submit {
+    background: $buttons;
+    border: none;
+    border-radius: 8px;
+    padding: 1em;
+    width: 150px;
+    color: white;
+    margin-top: 1em;
+}
+
+
+

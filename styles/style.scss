@@ -1,0 +1,147 @@
+@import "variables";
+@import "mixin";
+@import "nav";
+@import "fonts";
+@import "about";
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: $background;
+}
+
+main {
+    margin: 0em 12em 0em 12em;
+
+    a {
+        text-decoration: none;
+        color: white
+    }
+
+    h5 {
+        margin-top: 0.7em;
+        margin-bottom: 0.5em;
+    }
+
+    .heading {
+        @include space-between;
+        margin-bottom: 1em;
+        margin-top: 7em;
+
+    .main {
+        @include button;
+        background-color: $buttons;
+        border-radius: 7px;
+        color: #f6f6f6;
+        padding: 0.5em 2em;
+        background-image: url("/images/icons/ic_plus_white@3x.png");
+        background-repeat: no-repeat;
+        background-position: 10px 11px;
+        padding: 10px 21px 13px 40px;
+        background-size: 15px;
+        
+    }
+    }
+
+    .search {
+        @include space-between;
+        margin-bottom: 1em;
+        margin-top: 2em;
+
+        .search-type {
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            padding: 0.8em;
+            width: 300px;
+            background-color: #e8e8e8;
+            background-image: url("/images/icons/ic_search@3x.png");
+            background-repeat: no-repeat;
+            background-position: 10px 10px;
+            padding: 12px 20px 12px 40px;
+            background-size: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            list-style: none;
+
+            .red {
+                @include button;
+                background: $buttons;
+                padding: 0.4em;
+                width: 110px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+
+            .gray {
+                @include button;
+                background: #c3c3c3;
+                padding: 0.4em;
+                width: 110px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        }
+    }
+
+    .block {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
+        padding: 1em;
+        height: 10em;
+        margin-top: 1em;
+
+
+    #House {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        object-position: 1% 20%;
+        border-radius: 10px;
+        float: left;
+        margin-right: 1em;
+            }
+    }
+}
+
+#empty {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.description {
+    color:rgba($text-1, 0.4);
+    margin-bottom: 0.4em;
+    
+}
+
+#list-icon  {
+    width: 20px;
+    opacity: 70%;
+}
+
+.sizing {
+    opacity: 70%;
+}
+
+.price {
+margin-bottom: 0.5em;
+}
+
+
+
+
+
+
+
+
