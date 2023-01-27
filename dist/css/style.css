@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Libre+Baskerville:wght@700&family=Montserrat:wght@300&family=Open+Sans:wght@400;600&family=Paytone+One&family=Raleway:wght@300&display=swap");
 nav {
   background-color: white;
+  align-items: center;
   display: flex;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
   margin-bottom: 2.5em;
@@ -55,11 +56,17 @@ h3 {
 
 h5 {
   font-family: "Monstserrat", sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
 }
 
 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.detail {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -114,6 +121,7 @@ a:is(:link, :active, :visited).active {
 }
 
 #dtt {
+  opacity: 70%;
   color: #067Bc2;
 }
 
@@ -149,7 +157,7 @@ main a {
   color: white;
 }
 main h5 {
-  margin-top: 0.7em;
+  margin-top: 0.4em;
   margin-bottom: 0.5em;
 }
 main .heading {
@@ -167,7 +175,7 @@ main .heading .main {
   border-radius: 7px;
   color: #f6f6f6;
   padding: 0.5em 2em;
-  background-image: url("/images/icons/ic_plus_white@3x.png");
+  background-image: url("/images/ic_plus_white@3x.png");
   background-repeat: no-repeat;
   background-position: 10px 11px;
   padding: 10px 21px 13px 40px;
@@ -186,7 +194,7 @@ main .search .search-type {
   padding: 0.8em;
   width: 300px;
   background-color: #e8e8e8;
-  background-image: url("/images/icons/ic_search@3x.png");
+  background-image: url("/images/ic_search@3x.png");
   background-repeat: no-repeat;
   background-position: 10px 10px;
   padding: 12px 20px 12px 40px;
@@ -257,8 +265,15 @@ main .block #House {
 
 .sizing {
   opacity: 70%;
+  display: flex;
 }
 
 .price {
   margin-bottom: 0.5em;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

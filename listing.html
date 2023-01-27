@@ -26,57 +26,99 @@
     </nav>
 
     <main>
-    <form action="action_page.php" id="form">
-    <div class="container">
-    <p class="back"><a href=""><img src="images/icons/ic_back_grey@3x.png" alt="icon-array" class="icon-array"></a>Back to overview</p>
-    <h2 class="small-h2">Create new listing</h2>
-    <label>Street name*</label><br>
-    <input type="text" name="street" placeholder="Enter the street name"><br>
+        <form action="action_page.php" id="form">
+            <div class="container">
+                <p class="back"><a href="detail.html"><img src="images/ic_back_grey@3x.png" alt="icon-array"class="icon-array"></a>Back to overview</p>
+                <h2 class="small-h2">Create new listing</h2>
+        
+                <div class="input-group">
+                    <label for="street">Street name*</label>
+                    <input type="text" name="street" id="street" placeholder="Enter the street name"/>
+                </div>
 
+                <div class="display-connected">
+                <div class="input-group">
+                    <label for="number">House number*</label>
+                    <input type="text" name="number" id="number" placeholder="Enter house numbery" />
+                </div>
 
-    <label>House number*</label><br>
-    <input type="text" name="house-number" placeholder="Enter house number">
-    <label>Addition (optional)</label>
-    <input type="text" placeholder="e.g.A."><br>
-    
-    <label>Postal code*</label><br>
-    <input type="text" name="postal-code" placeholder="e.g. 1000 AA"><br>
-    
-    <label>City*</label><br>
-    <input type="text" name="city" placeholder="e.g. Utrecht"><br>
-    
-    <label>Upload picture(PNG or JPG)*</label><br>
-    <input type="file" name="filename"><br>
-    
-    <label>Price*</label><br>
-    <input type="text" name="price" placeholder="e.g.€150.000"><br>
-    
-    <label>Size*</label><br>
-    <input type="text" name="Size" placeholder="e.g.60m2">
-    <label>Garage*</label>
-    <select name="garagelist" id="garage">
-        <option value="select">Select</option>
-        <option value="option1">Option-1</option>
-        <option value="option2">Option-2</option>
-    </select><br>
-    
-    <label>Bedrooms*</label><br>
-    <input type="text" placeholder="Enter amount">
-    <label>Bathrooms*</label>
-    <input type="text" placeholder="Enter amount"><br>
-    
-    <label>Construction date*</label><br>
-    <input type="text" placeholder="e.g 1990"><br>
-    
-    <label>Description*</label><br>
-    <input type="text" placeholder="Enter description" required id="description"><br>
+                <div class="input-group">
+                    <label id="optional">Addition (optional)</label>
+                    <input type="text" id="optional" placeholder="e.g.A"/>
+                </div>
+                </div>
 
-    <button type="submit" class="submit">POST</button>
-    </div>
+                <div class="input-group">
+                    <label for="post">Postal code*</label>
+                    <input type="text" name="post" id="post" placeholder="e.g.1000 AA" />
+                </div>
 
-    </form>
-    </main>
+                <div class="input-group">
+                    <label for="city">City*</label>
+                    <input type="text" name="city" id="city" placeholder="e.g. Utrecht" />
+                </div>
 
-    <script src="script.js"></script>
+                <div class="input-group">
+                    <label for="picture">Upload picture(PNG or JPG)*</label>
+                    <div class="drag-area">
+                        <input type="file" hidden>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="price">Price*</label>
+                    <input type="text" name="price" id="price" placeholder="e.g. €150.000" />
+                </div>
+
+                <div class="display-connected">
+                <div class="input-group">
+                    <label for="size">Size*</label>
+                    <input type="text" name="size" id="size" placeholder="e.g. 60m2" />
+                </div>
+
+                <div class="input-group">
+                    <label id="garage">Garage*</label>
+                    <select name="garage" id="garage" required>
+                        <option value="select">Select</option>
+                        <option value="option1">Option-1</option>
+                        <option value="option2">Option-2</option>
+                    </select>
+                </div>
+                </div>
+
+                <div class="display-connected">
+                <div class="input-group">
+                    <label for="bedrooms">Bedrooms*</label>
+                    <input type="text" name="bedrooms" id="bedrooms" placeholder="Enter amount" />
+                </div>
+
+                <div class="input-group">
+                    <label for="bathrooms" id="bathrooms">Bathrooms*</label>
+                    <input type="text" name="bathrooms" id="bathrooms" placeholder="Enter amount" />
+                </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="construction">Construction date*</label>
+                    <input type="text" name="construction" id="construction" placeholder="e.g.1990" />
+                </div>
+
+                <div class="input-group">
+                    <label for="description">Description*</label>
+                    <input type="text" name="description" id="description" placeholder="Enter description" />
+                </div>
+
+                <div class="input-group full">
+                <button type="submit" class="submit">SAVE</button>
+                <div class="clear"></div>
+                </div>
+
+                <div class="errors">
+                    
+                </div>
+                </form>
+                </main>
+
+    <script src="/js/script.js"></script>
 </body>
 </html>

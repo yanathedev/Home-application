@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Libre+Baskerville:wght@700&family=Montserrat:wght@300&family=Open+Sans:wght@400;600&family=Paytone+One&family=Raleway:wght@300&display=swap");
 nav {
   background-color: white;
+  align-items: center;
   display: flex;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
   margin-bottom: 2.5em;
@@ -57,11 +58,17 @@ h3 {
 
 h5 {
   font-family: "Monstserrat", sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
 }
 
 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.detail {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -116,6 +123,7 @@ a:is(:link, :active, :visited).active {
 }
 
 #dtt {
+  opacity: 70%;
   color: #067Bc2;
 }
 
@@ -151,7 +159,7 @@ main a {
   color: white;
 }
 main h5 {
-  margin-top: 0.7em;
+  margin-top: 0.4em;
   margin-bottom: 0.5em;
 }
 main .heading {
@@ -169,7 +177,7 @@ main .heading .main {
   border-radius: 7px;
   color: #f6f6f6;
   padding: 0.5em 2em;
-  background-image: url("/images/icons/ic_plus_white@3x.png");
+  background-image: url("/images/ic_plus_white@3x.png");
   background-repeat: no-repeat;
   background-position: 10px 11px;
   padding: 10px 21px 13px 40px;
@@ -188,7 +196,7 @@ main .search .search-type {
   padding: 0.8em;
   width: 300px;
   background-color: #e8e8e8;
-  background-image: url("/images/icons/ic_search@3x.png");
+  background-image: url("/images/ic_search@3x.png");
   background-repeat: no-repeat;
   background-position: 10px 10px;
   padding: 12px 20px 12px 40px;
@@ -265,6 +273,12 @@ main .block #House {
   margin-bottom: 0.5em;
 }
 
+.empty {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 nav a {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
@@ -287,11 +301,17 @@ h3 {
 
 h5 {
   font-family: "Monstserrat", sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
 }
 
 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.detail {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -389,23 +409,180 @@ nav ul li a {
   margin-bottom: 1em;
 }
 
-input {
+input, select {
   border: none;
-  padding: 0.8em;
-  border-radius: 6px;
-  margin: 0.5em 0em 0.5em 0em;
+  padding: 1em;
+  border-radius: 8px;
+  margin: 0.5em 0em 0em 0em;
 }
 
 label {
   color: rgba(74, 75, 76, 0.8);
 }
 
-#description {
-  padding: 1em 11em 6em 1em;
+#form {
+  margin-top: 6em;
+}
+
+.display-connected {
+  display: flex;
+}
+
+.right {
+  margin-left: 1em;
+}
+
+.drag-area {
+  margin-top: 1.5em;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border: dashed 4px rgba(0, 0, 0, 0.4);
+}
+
+.drag-area.active {
+  border: 2px solid #fff;
+}
+
+.drag-area .icon {
+  font-size: 100px;
+  color: #fff;
+}
+
+.drag-area header {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.drag-area span {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  margin: 10px 0 15px 0;
+}
+
+.drag-area button {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #5256ad;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.drag-area img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
 }
 
 #form {
-  margin-top: 6em;
+  display: flex;
+  flex-wrap: wrap;
+}
+#form .input-group {
+  width: 50%;
+  min-width: 200px;
+  margin-bottom: 1em;
+}
+#form .input-group.full {
+  width: 100%;
+}
+#form .input-group .clear {
+  clear: both;
+}
+#form .input-group #description {
+  padding: 1.3em 0em 8em 1.5em;
+}
+#form .input-group label,
+#form .input-group input {
+  display: block;
+  width: 100%;
+}
+#form .input-group input {
+  padding: 1.3em 0em 1.3em 1.3em;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.4);
+}
+#form .input-group input:focus {
+  border: 1px solid #f6f6f6;
+}
+#form .input-group input.error {
+  border: 1px solid #EB5440;
+}
+#form .input-group #street,
+#form .input-group #post,
+#form .input-group #city,
+#form .input-group #price,
+#form .input-group #construction,
+#form .input-group #description {
+  width: 340px;
+}
+#form .input-group #number,
+#form .input-group #optional,
+#form .input-group #size,
+#form .input-group #garage,
+#form .input-group #bedrooms,
+#form .input-group #bathrooms {
+  width: 160px;
+}
+#form .input-group #optional,
+#form .input-group #garage,
+#form .input-group #bathrooms {
+  margin-left: -1.5em;
+}
+#form .input-group input #garage {
+  color: rgba(0, 0, 0, 0.4);
+}
+#form .input-group select#garage {
+  color: rgba(0, 0, 0, 0.6);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url("/images/grey-arroy.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 3px) center;
+  background-size: 30px;
+}
+#form .errors {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 15px;
+  pointer-events: none;
+}
+#form .errors .error {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgba(230, 20, 20, 0.8);
+  color: #FFF;
+  font-size: 14px;
+  transform: translateY(300px);
+  pointer-events: all;
+  margin-bottom: 10px;
+  -webkit-animation: slide-in 1s ease-out forwards;
+          animation: slide-in 1s ease-out forwards;
+}
+@-webkit-keyframes slide-in {
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes slide-in {
+  to {
+    transform: translateY(0px);
+  }
 }
 
 .submit {
@@ -416,4 +593,8 @@ label {
   width: 150px;
   color: white;
   margin-top: 1em;
+  margin-left: 13em;
+}
+.submit:hover {
+  background: rgba(196, 18, 18, 0.8);
 }/*# sourceMappingURL=listing.css.map */

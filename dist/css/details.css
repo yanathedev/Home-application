@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Libre+Baskerville:wght@700&family=Montserrat:wght@300&family=Open+Sans:wght@400;600&family=Paytone+One&family=Raleway:wght@300&display=swap");
 nav {
   background-color: white;
+  align-items: center;
   display: flex;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
   margin-bottom: 2.5em;
@@ -55,11 +56,17 @@ h3 {
 
 h5 {
   font-family: "Monstserrat", sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
 }
 
 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.detail {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -115,7 +122,7 @@ main .big-block {
   margin-top: 7em;
 }
 main h5 {
-  margin: 1em 0em 1em 0em;
+  margin: 1em 0em 0.5em 0em;
 }
 main .overview {
   margin: 1.5em;
@@ -125,7 +132,9 @@ main .overview {
   background-color: white;
   box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
   width: 550px;
-  height: 630px;
+  height: 680px;
+  margin-bottom: 3em;
+  margin-top: 2em;
 }
 .block #House-detail {
   width: 550px;
@@ -135,9 +144,16 @@ main .overview {
   align-items: center;
   margin-bottom: 1.5em;
 }
+.block .heading-5 {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
 
-#heading-5 {
-  margin: 0.4em 0em -0.5em 0em;
+.icon-array {
+  width: 23px;
+  margin-right: 1em;
+  margin-bottom: -0.3em;
 }
 
 aside {
@@ -150,25 +166,15 @@ aside .small-block {
   background-color: white;
   box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
   width: 350px;
-  height: 120px;
+  height: 105px;
   border-radius: 5px;
   padding: 0.8em;
   margin-bottom: 1em;
 }
-aside .heading-5 {
-  font-family: "Monstserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 0.5em;
-}
 aside .sizing-aside {
   display: flex;
   align-items: center;
-}
-
-.icon-array {
-  width: 23px;
-  margin-right: 1em;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .location {
@@ -183,6 +189,7 @@ aside .sizing-aside {
 .icons {
   display: flex;
   margin-top: -0.8em;
+  margin-bottom: -1em;
 }
 .icons .price {
   display: flex;
@@ -190,8 +197,7 @@ aside .sizing-aside {
 }
 .icons .price .icon-price {
   width: 15px;
-  margin-right: 0.5em;
-  margin-top: 0.5em;
+  margin: 0em 0.5em 0em 0em;
 }
 .icons .sizing {
   display: flex;
@@ -253,8 +259,43 @@ aside .sizing-aside {
 
 #list-icon {
   width: 15px;
+  margin: 0em 0.5em 0em 0.5em;
 }
 
 .information {
   display: table-cell;
+}
+
+.detail {
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: -0.1em;
+}
+
+.heading-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#list-icon-btn {
+  width: 20px;
+  opacity: 90%;
+  margin-right: 1em;
+}
+
+label {
+  margin-bottom: 2em;
+}
+
+.the-price {
+  margin-top: -0.001em;
+}
+
+.description-1 {
+  margin: -1em 0em em 0em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.sizing-aside {
+  margin-left: -0.5em;
 }/*# sourceMappingURL=details.css.map */
