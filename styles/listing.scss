@@ -47,6 +47,7 @@ nav {
     }
 }
 
+
 .container {
     padding: 16px;
 }
@@ -77,12 +78,8 @@ label {
     color: rgba($text-1, 0.8);
 }
 
-
-
 #form {
     margin-top: 6em;
-
-    
 }
 
 .display-connected {
@@ -94,57 +91,11 @@ label {
 
 }
 
+
 //Image From//
-
-.drag-area {
-    margin-top: 1.5em;
-    display: inline-block;
-    width: 120px;
-    height: 120px;
-    border: dashed 4px rgba(0, 0, 0, 0.4);
+#file {
+    display: none;
 }
-
-.drag-area.active {
-    border: 2px solid #fff;
-}
-
-.drag-area .icon {
-    font-size: 100px;
-    color: #fff;
-}
-
-.drag-area header {
-    font-size: 30px;
-    font-weight: 500;
-    color: #fff;
-}
-
-.drag-area span {
-    font-size: 25px;
-    font-weight: 500;
-    color: #fff;
-    margin: 10px 0 15px 0;
-}
-
-.drag-area button {
-    padding: 10px 25px;
-    font-size: 20px;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    background: #fff;
-    color: #5256ad;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.drag-area img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
 //Image Form//
 
 
@@ -155,7 +106,7 @@ label {
 
     .input-group {
         width: calc(50%);
-        min-width: 200px;
+        width: 200px;
         margin-bottom: 1em;
 
         &.full {
@@ -285,3 +236,12 @@ label {
 
 //the end
 
+//Responsive design//
+    @media only screen and (max-width: 420px) { //mobile version
+        main {
+            padding: 1em;
+            margin: 1em;
+
+    }
+    }
+//Responsive design//

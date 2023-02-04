@@ -1,16 +1,15 @@
 //Navigation bar//
 const activePage = window.location.pathname;
 const navLinks = document.querySelectorAll('nav a').
-forEach(link =>{
+forEach(link => {
     if(link.href.includes(`${activePage}`)){
         link.classList.add('active');
     }
 })
 //Navigation bar//
 
-
 //Listing error//
-        const regForm = document.querySelector('form#form');
+    const regForm = document.querySelector('form#form');
     const errors_el = document.querySelector('form#form .errors');
 
     regForm.addEventListener('submit', validateFormForm);
@@ -107,6 +106,12 @@ forEach(link =>{
     errors_el.appendChild(error_el);
     }
 //Listing error//
+
+//Pop-up message//
+function pro1(){
+   document.getElementById("file").click();
+}
+//Pop-up message//
 
 
 

@@ -1,21 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Libre+Baskerville:wght@700&family=Montserrat:wght@300&family=Open+Sans:wght@400;600&family=Paytone+One&family=Raleway:wght@300&display=swap");
 nav {
+  display: flex;
+  position: absolute;
+  top: 0;
   background-color: white;
   align-items: center;
-  display: flex;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
   margin-bottom: 2.5em;
   position: fixed;
   width: 100%;
-  top: 0;
+  min-height: 1.5em;
 }
 nav ul {
   padding: 0em 8em 0em 8em;
 }
 nav ul #Logo {
   margin: 1em;
-  width: 120px;
+  max-width: 7.5em;
 }
 nav ul li {
   display: inline-block;
@@ -34,6 +36,11 @@ nav ul li a:is(:link, :active, :visited).active {
   color: rgba(0, 0, 0, 0.7);
 }
 
+@media (min-width: 320px) {
+  ul {
+    margin-bottom: 15px;
+  }
+}
 nav a {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
@@ -108,27 +115,37 @@ a:is(:link, :active, :visited).active {
   font-weight: 700;
 }
 
-nav {
-  margin-right: -1em;
-}
-nav ul #Logo {
-  margin: -0.2em 0.2em -0.2em 0.2em;
+.heading-5 {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-main {
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+.container .main {
   margin: 0em 12em 0em 12em;
+  width: 50%;
+  float: right;
+  padding: 20px;
 }
-main .big-block {
-  margin-top: 7em;
+.container .main .big-block {
+  padding: 20px;
 }
-main h5 {
+.container .main h5 {
   margin: 1em 0em 0.5em 0em;
 }
-main .overview {
+.container .main .overview {
   margin: 1.5em;
 }
-
-.block {
+.container .block {
   background-color: white;
   box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
   width: 550px;
@@ -136,117 +153,142 @@ main .overview {
   margin-bottom: 3em;
   margin-top: 2em;
 }
-.block #House-detail {
-  width: 550px;
+.container .block #House-detail {
+  max-width: 550px;
 }
-.block .back {
+.container .block .back {
   display: flex;
   align-items: center;
   margin-bottom: 1.5em;
 }
-.block .heading-5 {
-  font-family: "Monstserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.icon-array {
+.container .icon-array {
   width: 23px;
   margin-right: 1em;
   margin-bottom: -0.3em;
 }
-
-aside {
+.container .aside {
+  width: 50%;
   float: right;
-  position: top-right;
-  height: 50%;
-  width: 35%;
+  padding: 20px;
 }
-aside .small-block {
+.container .aside .small-block {
   background-color: white;
   box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
-  width: 350px;
-  height: 105px;
+  width: 20em;
+  height: 8em;
   border-radius: 5px;
   padding: 0.8em;
-  margin-bottom: 1em;
+  margin: 1em 0em 1em 0em;
 }
-aside .sizing-aside {
+.container .aside .sizing-aside {
   display: flex;
   align-items: center;
   color: rgba(0, 0, 0, 0.5);
+  margin-left: -0.5em;
+  margin-top: -2.5em;
 }
-
-.location {
+.container .aside .location {
   display: flex;
   align-items: center;
 }
-.location .icon-location {
-  width: 15px;
+.container .aside .location .icon-location {
+  max-width: 15px;
   margin-right: 0.5em;
 }
-
-.icons {
+.container .aside .icons {
+  display: flex;
+}
+.container .aside .icons .price {
+  display: flex;
+  align-items: center;
+}
+.container .aside .icons .price .icon-price {
+  max-width: 15px;
+  margin: 0em 0.5em 0em 0em;
+}
+.container .aside .icons .sizing {
+  display: flex;
+  align-items: center;
+}
+.container .aside .icons .sizing .icon-size {
+  max-width: 15px;
+  margin: 0em 0.5em 0em 1em;
+}
+.container .aside .icons .build {
+  display: flex;
+  align-items: center;
+}
+.container .aside .icons .build .icon-const {
+  max-width: 15px;
+  margin: 0em 0.5em 0em 1em;
+}
+.container .location {
+  display: flex;
+  align-items: center;
+}
+.container .location .icon-location {
+  max-width: 15px;
+  margin-right: 0.5em;
+}
+.container .icons {
   display: flex;
   margin-top: -0.8em;
   margin-bottom: -1em;
 }
-.icons .price {
+.container .icons .price {
   display: flex;
   align-items: center;
 }
-.icons .price .icon-price {
-  width: 15px;
+.container .icons .price .icon-price {
+  max-width: 15px;
   margin: 0em 0.5em 0em 0em;
 }
-.icons .sizing {
+.container .icons .sizing {
   display: flex;
   align-items: center;
 }
-.icons .sizing .icon-size {
-  width: 15px;
+.container .icons .sizing .icon-size {
+  max-width: 15px;
   margin: 0em 0.5em 0em 1em;
 }
-.icons .build {
+.container .icons .build {
   display: flex;
   align-items: center;
 }
-.icons .build .icon-const {
-  width: 15px;
+.container .icons .build .icon-const {
+  max-width: 15px;
   margin: 0em 0.5em 0em 1em;
 }
-
-.rooms {
+.container .rooms {
   display: flex;
   align-items: center;
 }
-.rooms .bed {
+.container .rooms .bed {
   display: flex;
   align-items: center;
 }
-.rooms .bed .icon-bed {
-  width: 15px;
+.container .rooms .bed .icon-bed {
+  max-width: 15px;
   margin-right: 0.5em;
 }
-.rooms .shower {
+.container .rooms .shower {
   display: flex;
   align-items: center;
 }
-.rooms .shower .icon-shower {
-  width: 15px;
+.container .rooms .shower .icon-shower {
+  max-width: 15px;
   margin: 0em 0.5em 0em 1em;
 }
-.rooms .garage {
+.container .rooms .garage {
   display: flex;
   align-items: center;
 }
-.rooms .garage .icon-garage {
-  width: 15px;
+.container .rooms .garage .icon-garage {
+  max-width: 15px;
   margin: 0em 0.5em 0em 1em;
 }
-
-#House {
-  width: 100px;
+.container #House {
+  max-width: 100px;
   height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -256,46 +298,94 @@ aside .sizing-aside {
   float: left;
   margin-right: 1em;
 }
-
-#list-icon {
-  width: 15px;
+.container #list-icon {
+  max-width: 15px;
   margin: 0em 0.5em 0em 0.5em;
 }
-
-.information {
+.container .information {
   display: table-cell;
 }
-
-.detail {
+.container .detail {
   color: rgba(0, 0, 0, 0.6);
   margin-top: -0.1em;
 }
-
-.heading-buttons {
+.container .heading-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-#list-icon-btn {
-  width: 20px;
+.container #list-icon-btn {
+  max-width: 20px;
   opacity: 90%;
   margin-right: 1em;
 }
-
-label {
+.container label {
   margin-bottom: 2em;
 }
-
-.the-price {
+.container .the-price {
   margin-top: -0.001em;
 }
-
-.description-1 {
-  margin: -1em 0em em 0em;
+.container .description-1 {
+  margin: -0.8em 0em 2.5em 0em;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.sizing-aside {
-  margin-left: -0.5em;
+@media only screen and (max-width: 420px) {
+  nav {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container main {
+    padding: 1em;
+    margin: 1em;
+  }
+  .container main h2 {
+    display: flex;
+    margin: 0 auto;
+  }
+  .container main h5 {
+    margin-top: 1em;
+  }
+  .container main .small-block {
+    height: 8em;
+  }
+  .container main .main {
+    display: none;
+  }
+  .container main .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container main .search .search-type {
+    width: 26em;
+    border-radius: 6px;
+    margin-bottom: 1em;
+  }
+  .container main .search .buttons .red {
+    width: 12.5em;
+    margin-left: -3.2em;
+  }
+  .container main .search .buttons .gray {
+    width: 12.5em;
+  }
+  .container main .block {
+    height: 10em;
+  }
+  .container main .block h5 {
+    font-size: 16px;
+  }
+  .container aside {
+    margin-top: 10em;
+  }
+  .container aside h3 {
+    width: 20em;
+    margin-bottom: 1.5em;
+  }
+  aside {
+    margin-top: 25em;
+  }
 }/*# sourceMappingURL=details.css.map */
